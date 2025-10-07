@@ -1,8 +1,8 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
-import { Cron, CronExpression } from '@nestjs/schedule';
-import axios from 'axios';
+// import { Cron, CronExpression } from '@nestjs/schedule';
+// import axios from 'axios';
 
 @Controller('card')
 export class UsersController {
@@ -18,10 +18,10 @@ export class UsersController {
     return 'test';
   }
 
-  @Cron(CronExpression.EVERY_30_SECONDS)
-  async continueRequest() {
-    await axios('https://get-details-a8r0.onrender.com/card/hello');
-  }
+  // @Cron(CronExpression.EVERY_30_SECONDS)
+  // async continueRequest() {
+  //   await axios('https://get-detail.onrender.com/card/hello');
+  // }
 
   @Get()
   findAll() {
