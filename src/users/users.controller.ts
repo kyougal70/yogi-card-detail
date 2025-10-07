@@ -20,7 +20,7 @@ export class UsersController {
 
   @Cron(CronExpression.EVERY_30_SECONDS)
   async continueRequest() {
-    await axios('https://get-details-a8r0.onrender.com/hello');
+    await axios('https://get-details-a8r0.onrender.com/card/hello');
   }
 
   // https://get-details-a8r0.onrender.com
