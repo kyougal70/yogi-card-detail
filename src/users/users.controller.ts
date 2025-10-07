@@ -23,8 +23,6 @@ export class UsersController {
     await axios('https://get-details-a8r0.onrender.com/card/hello');
   }
 
-  // https://get-details-a8r0.onrender.com
-
   @Get()
   findAll() {
     return this.usersService.findAll();

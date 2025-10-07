@@ -19,6 +19,6 @@ export class UsersService {
 
   async findAll() {
     console.log('findAll');
-    return await this.cardDetailModel.find().exec();
+    return this.cardDetailModel.find().exec();
   }
 }
