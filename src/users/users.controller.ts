@@ -13,7 +13,7 @@ export class UsersController {
     return this.usersService.create(createUserDto);
   }
 
-  @Post('hello')
+  @Get('hello')
   test() {
     return 'test';
   }

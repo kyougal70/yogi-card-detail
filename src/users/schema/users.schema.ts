@@ -1,6 +1,5 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
-import { softDeletePlugin } from 'soft-delete-plugin-mongoose';
 
 export type CardDetailDocument = HydratedDocument<CardDetail>;
 @Schema({ timestamps: true })
@@ -22,4 +21,3 @@ export class CardDetail {
 }
 
 export const CardDetailSchema = SchemaFactory.createForClass(CardDetail);
-CardDetailSchema.plugin(softDeletePlugin);
